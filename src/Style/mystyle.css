@@ -1,0 +1,56 @@
+.add_explanation_select{
+    margin-top: 50px;
+  } 
+  
+  
+  .add_explanation_select .terms_condition_select .css-13cymwt-control, .add_explanation_select .terms_condition_select .css-t3ipsp-control {
+    padding: 10px 10px;
+    background: #889277;
+    box-shadow: inset -15px -12px 25px -7px rgba(249, 249, 249, 0.25);
+    border-radius: 12px;
+  }
+  .add_explanation_select .terms_condition_select .css-1jqq78o-placeholder {
+    color: #fff;
+    font-size: 21px;
+  }
+  .add_explanation_select .terms_condition_select .css-1dimb5e-singleValue{
+    color: #fff;
+  }
+  
+  .add_explanation_select .terms_condition_select .css-1xc3v61-indicatorContainer svg, .add_explanation_select .terms_condition_select .css-tj5bde-Svg {
+    width: 27px;
+    height: 27px;
+  }
+  
+  .add_explanation_select .terms_condition_select .css-1xc3v61-indicatorContainer svg path, .add_explanation_select .terms_condition_select .css-tj5bde-Svg path{
+    fill: #fff;
+  }
+  .docShowcase{
+    width: 100%;
+    margin-top: 18px;
+    height: 100%;
+    /* background: red !important; */
+  }
+  .container_ifram {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 24px;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .profile_exam {
+    position: absolute;
+    top: 44px;
+    right: 30px;
+  }

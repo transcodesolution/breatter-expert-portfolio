@@ -1,0 +1,3 @@
+It contain the page routes
+Dynamic configuration is best with working with routes
+Usually it have an nested array to render the routes

@@ -1,0 +1,56 @@
+import React, { useState } from "react";
+import {NavLink } from "react-router-dom";
+
+import Container from 'react-bootstrap/Container';
+
+import logo from '../../Assets/images/logo.png';
+import profile from '../../Assets/images//profile.png';
+
+const Header = () =>{
+
+    const [active, setActive] = useState()
+    const toggleClass = () =>{
+        setActive(!active);
+        document.documentElement.classList.toggle("cm_overflow");
+    }
+
+    return(
+        <div className="header_wrapper">
+            <div className={ `header_wrap ${(active ? 'menu_open' : '')}` }>
+                <Container>
+                    <div className="header_block">
+                        <div className="logo_block">
+                            <NavLink to="/">
+                                <img src={logo} alt="" />
+                            </NavLink>
+                        </div>
+                        <div className="mobile_menu">
+                            <div className="menu_wrap">
+                                <ul className="menu_block">
+                                    <li><NavLink to="/Answerpage">Home</NavLink></li>
+                                    <li><NavLink to="/AnswerRatingpage" className="active">Q & A</NavLink></li>
+                                    <li><NavLink to="/ContactUspage">Subscription</NavLink></li>
+                                </ul>
+                            </div>
+                            <div className="comman_btn">
+                                <div className="qa_profile">
+                                    <NavLink to="/Loginpage">
+                                        <img src={profile} alt="qa_profile" />
+                                        <span>Coli Den </span>
+                                    </NavLink>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="menu_toggle_btn" onClick={toggleClass}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </Container>
+            </div>
+        </div>
+    )
+}
+
+export default Header;
